@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KESTTMUSEUM</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <!--[if lt IE 7]><script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script><![endif]-->
+  <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+    <style type="text/css">
+    @font-face {
+    font-family:athan;
+    src: url(athan.otf);
+}   
+.fonts{
+    font-family:athan;
+}
+.fonts2{
+    font-size:20px;
+}
+</style>
+  
+</head>
+
+<body>
+
+	<center><div class="tit"><h2 style="color: #0000ff; ">consultar maquinaria de fixedsoda </h2>
+		<center><div class="Ingreso">
+
+				
+    <table border="0" align="center" valign="middle">
+    	<tr>
+    	<td rowspan=2>
+    	<form action="validar.php" method="post">
+
+    	<table border="0">
+
+    	<tr><td><label style="font-size: 14pt"><b>correo:</b></label></td>
+            <td width="80"> <input class="form-group has success" style="border-radius:15px;" type="text" name="mail"></td></tr>
+        <tr><td><label style="font-size: 14pt"><b>contraseña:</b></label></td>
+            <td width="80"><input style="border-radius:15px;" type="password" name="pass"></td></tr>
+        <tr><td></td>
+            <td width="80" align="center"><input class="btn btn-primary" type="submit" value="Aceptar" id="botonacep"></td>
+            </tr></tr></table>
+        </form>
+<br>
+<!--formulario registro -->
+</div>
+<?php
+        if (isset($_POST['submit'])){
+            require("maquinaria.php");
+        }
+    ?>
+<!--Fin formulario registro -->
+        
+        </td>
+        </tr>
+        </table>
+        </div></center></div></center>
+
+
+
+</body>
+</html>
